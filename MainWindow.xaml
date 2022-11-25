@@ -1,0 +1,32 @@
+﻿<Window x:Class="nani.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nani"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="450" 
+        Background="LightPink"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <Grid Margin="96,111,104,89">
+            <Image HorizontalAlignment="Center" Height="123" VerticalAlignment="Center" Margin="-70, -95, 0, 0" Width="142" Source="/wishlist.png"/>
+            <Image HorizontalAlignment="Center" Height="100" Margin="-58,65,0,0" VerticalAlignment="Center" Width="100" Source="/ordered.png"/>
+            <Image HorizontalAlignment="Center" Height="122" Margin="130,66,0,0" VerticalAlignment="Center" Width="237" Source="/owned.png"/>
+            <Image HorizontalAlignment="Center" Height="100" Margin="125,-95,0,0" VerticalAlignment="Center" Width="100" Source="/links.png"/>
+            <Button Content=" " HorizontalAlignment="Left" Margin="41,69,0,0" VerticalAlignment="Top" Height="56" Width="98" Background="Transparent" Opacity="0"
+                Click="Button_Click" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
+            <Button Content=" " HorizontalAlignment="Left" Margin="150,142,0,0" VerticalAlignment="Top" Height="64" Width="84" Opacity="0" Background="Transparent" 
+                Click="Button_Click_1" 
+                MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
+            <Button Content="Button" Margin="165,61,41,0" VerticalAlignment="Top" Height="60" Width="44" Opacity="0"
+                MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_2"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="60,148,0,0" VerticalAlignment="Top" Height="46" Width="75" Opacity="0"
+                MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_3" />
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Bottom" Width="345" Source="/a.PNG" Margin="57,0,0,13"/>
+        <Image HorizontalAlignment="Left" Height="88" VerticalAlignment="Top" Width="338" Source="/b.PNG" Margin="54,13,0,0"/>
+        <Frame Height="auto" Width="auto" Name="mainframe" />
+    </Grid>
+</Window>
